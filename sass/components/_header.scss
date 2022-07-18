@@ -1,6 +1,10 @@
 .header {
-	border-bottom: 1px solid #ECECEC;
+	position: fixed;
 	padding: 24px 0;
+	width: 100%;
+	z-index: 10;
+	background-color: $main-bgd-color;
+	border-bottom: 1px solid #ECECEC;
 
 	&__row {
 		display: flex;
