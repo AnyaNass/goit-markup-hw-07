@@ -47,10 +47,14 @@
 	&__card {
 		width: 370px;
 		background: $main-bgd-color;
-		cursor: pointer;
+	}
+
+	&__link {
+		display: block;
 		transition: box-shadow $transition-variable;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 		}
 	}
@@ -70,7 +74,7 @@
 		transform: translateY(100%);
 		transition: transform $transition-variable;
 
-		.portfolio__card:hover & {
+		.portfolio__link:hover &, .portfolio__link:focus &{
 			transform: translateY(0%);
 		}
 	}

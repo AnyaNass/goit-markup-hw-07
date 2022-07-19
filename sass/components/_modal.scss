@@ -16,7 +16,8 @@
 		pointer-events: none;
 		opacity: 0;
 		visibility: hidden;
-		& .modal{
+
+		& .modal {
 			transform: translate(-50%, -50%) scale(1.2);
 		}
 	}
@@ -58,6 +59,11 @@
 
 	&__close-icon {
 		vertical-align: middle;
+
+		&:hover,
+		&:focus {
+			fill: $accent;
+		}
 	}
 
 	&__title {
@@ -155,9 +161,9 @@
 		&::before {
 			content: " ";
 			position: absolute;
-			top: 50%;
+			top: 0%;
 			left: 50%;
-			transform: translate(-50%, -50%) rotate(-45deg);
+			transform: translate(-50%) rotate(-45deg);
 			width: 11px;
 			height: 6px;
 			border-left: 2px solid #ffffff;
