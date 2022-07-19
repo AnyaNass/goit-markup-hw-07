@@ -4,6 +4,7 @@ body {
 	color: $main-text-color;
 	background-color: var(--white);
 	letter-spacing: 0.03em;
+	user-select: none;
 }
 
 .no-scroll {
